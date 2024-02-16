@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(42, 90, 74);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 1000px;
+    padding: 2em 2em;
+    background-color: #fff;
+    opacity: 0.4;
+    border: 1px solid;
+    border-radius: 20px;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aquamarine;
+    letter-spacing: 2px;
+}
+.listBlock div {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.textIn {
+    padding: 0 0 0 10px;
+}
+
+ul {
+    margin-top: 40px;
+}
+
+.taskItem {
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.496);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-img {
+    width: 100px;
+}
+.container-img img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    font-family: Caveat;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px){
+    .container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 620px){
+    .container {
+        width: 400px;
+    }
+    .container-img {
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .listBlock div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 350px;
+    }
+}
